@@ -1,111 +1,204 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="favourite-places-bg-container">
-      <h1 class="favourite-places-heading">Favourite Places</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Saranya Vuppala</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: whitesmoke;
+            background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: whitesmoke;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #689695;
+            font-size: 36px;
+        }
+        
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-      <div class="favourite-place-card-container d-flex flex-row">
-        <div>
-          <h1 class="favourite-place-card-heading">Taj Mahal</h1>
-          <p class="favourite-place-card-description">
-            If there was just one symbol to represent all of India, it would be
-            the Taj Mahal
-          </p>
-        </div>
-        <img
-          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
-          class="favourite-place-card-image"
-        />
-      </div>
+        /* Profile Image */
+        img.profile-img {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
 
-      <div class="favourite-place-card-container d-flex flex-row">
-        <div>
-          <h1 class="favourite-place-card-heading">Golden Temple</h1>
-          <p class="favourite-place-card-description">
-            Amritsar is world-famous for the beautiful and highly revered Golden
-            Temple
-          </p>
-        </div>
-        <img
-          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
-          class="favourite-place-card-image"
-        />
-      </div>
+        /* Skills Section */
+        .skills {
+            color: #689695;
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        /* About Me and Skills Paragraph */
+        .para {
+            color: lightgreen;
+            text-align: center;
+            padding-top: 20px;
+        }
 
-      <div class="favourite-place-card-container d-flex flex-row">
-        <div>
-          <h1 class="favourite-place-card-heading">Mysore Palace</h1>
-          <p class="favourite-place-card-description">
-            The Mysore Palace is a historical palace and the royal residence at
-            Mysore .
-          </p>
-        </div>
-        <img
-          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
-          class="favourite-place-card-image"
-        />
-      </div>
+        /* Project and Resume Links with Icons */
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .links img {
+            width: 50px;
+            height: 50px;
+            margin: 0 20px;
+        }
 
-      <div class="favourite-place-card-container d-flex flex-row">
-        <div>
-          <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
-          <p class="favourite-place-card-description">
-            Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
-          </p>
+        .links a {
+            font-size: 18px;
+            color: olive;
+            margin: 0 30px;
+            text-decoration: none;
+        }
+
+        .links img,
+        .links a {
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saranya Vuppala</h1>
+        <p>Student</p>
+        <!-- Correct the path to the profile image -->
+        <img src="C:/Users/vuppa/Downloads/certificates and resume/passport Photo.jpg" alt="Profile Photo" class="profile-img">
+        
+        <div class="para">
+            <h3>About Me</h3>
+            <p>An enthusiastic and exceptional individual.</p>
+            <p>Always eager to participate and learn new things.</p>
+            <p>Confident and considerate in everything.</p>
         </div>
-        <img
-          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
-          class="favourite-place-card-image"
-        />
-      </div>
+
+        <div class="para">
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li>Python</li>
+                <li>Basics of C</li>
+                <li>SQL</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Links to Projects and Resume with icons -->
+    <div class="links">
+        <img src="https://previews.123rf.com/images/bestvectorstock/bestvectorstock1808/bestvectorstock180810960/107156890-achievement-vector-icon-isolated-on-transparent-background-achievement-logo-concept.jpg" alt="Projects Icon">
+        <a href="project.html">Projects</a>
+
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkq4BQHY6AZoxCvKw0mL4mj2Jxtotyingoy8g9_3k1KTdSOpDMvam7veq6tzVj64sPk-o&usqp=CAU" alt="Resume Icon">
+        <a href="resume.html">Resume</a>
     </div>
-  </body>
+
+    
+</body>
 </html>
 
 
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.favourite-places-bg-container {
-  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
-  height: 100vh;
-  background-size: cover;
-}
 
-.favourite-places-heading {
-  color: white;
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: bold;
-  padding: 24px;
-}
 
-.favourite-place-card-container {
-  background-color: white;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 15px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Certificate</title>
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
 
-.favourite-place-card-heading {
-  color: #0f0e46;
-  font-family: "Roboto";
-  font-size: 23px;
-  font-weight: bold;
-}
+        /* Container to center heading and PDF */
+        .container {
+            text-align: center;
+        }
 
-.favourite-place-card-description {
-  color: #6c6b70;
-  font-family: "Roboto";
-  font-size: 13px;
-}
+        /* Styling for the heading */
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
 
-.favourite-place-card-image {
-  width: 80px;
-  height: 100px;
-}
+        /* Embed or iframe to center the PDF */
+        .pdf-viewer {
+            width: 210%;
+            height: 570px;
+            
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Certificate</h1>
+        <!-- Embed the PDF or use iframe -->
+        <embed src="AWS_Academy_Graduate.pdf" class="pdf-viewer" type="application/pdf">
+            
+            <h1>Python Certificate by Kaggle</h1>
+        <!-- Embed the PDF or use iframe -->
+        <embed src="Python.pdf" class="pdf-viewer" type="application/pdf">
+            
+
+            <h1>SQL Basic certificate by Hacker Rank</h1>
+        <!-- Embed the PDF or use iframe -->
+        <embed src="sql_basic_certificate.pdf" class="pdf-viewer" type="application/pdf">
+            
+
+    </div>
+</body>
+</html>
+
+
+    
+   
+    
