@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Saranya Vuppala</title>
@@ -41,7 +43,6 @@
             text-align: center;
             margin-top: 20px;
         }
-
         /* Profile Image */
         img.profile-img {
             margin-top: 20px;
@@ -50,7 +51,6 @@
             border-radius: 100%;
             object-fit: cover;
         }
-
         /* Skills Section */
         .skills {
             color: #689695;
@@ -65,7 +65,6 @@
             text-align: center;
             padding-top: 20px;
         }
-
         /* Project and Resume Links with Icons */
         .links {
             display: flex;
@@ -78,19 +77,16 @@
             height: 50px;
             margin: 0 20px;
         }
-
         .links a {
             font-size: 18px;
             color: olive;
             margin: 0 30px;
             text-decoration: none;
         }
-
         .links img,
         .links a {
             vertical-align: middle;
         }
-
     </style>
 </head>
 <body>
@@ -98,7 +94,7 @@
         <h1>Saranya Vuppala</h1>
         <p>Student</p>
         <!-- Correct the path to the profile image -->
-        <img src="C:/Users/vuppa/Downloads/certificates and resume/passport Photo.jpg" alt="Profile Photo" class="profile-img">
+        <img src="C:\Users\vuppa\Downloads\certificates and resume\Vupppala Saranya-pp.jpg" alt="Profile Photo" class="profile-img">
         
         <div class="para">
             <h3>About Me</h3>
@@ -106,7 +102,6 @@
             <p>Always eager to participate and learn new things.</p>
             <p>Confident and considerate in everything.</p>
         </div>
-
         <div class="para">
             <h3>Skills</h3>
             <ul class="skills">
@@ -117,23 +112,17 @@
             </ul>
         </div>
     </header>
-
     <!-- Links to Projects and Resume with icons -->
     <div class="links">
         <img src="https://previews.123rf.com/images/bestvectorstock/bestvectorstock1808/bestvectorstock180810960/107156890-achievement-vector-icon-isolated-on-transparent-background-achievement-logo-concept.jpg" alt="Projects Icon">
-        <a href="project.html">Projects</a>
-
+        <a href="Certificate.html">certificates</a>
         
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkq4BQHY6AZoxCvKw0mL4mj2Jxtotyingoy8g9_3k1KTdSOpDMvam7veq6tzVj64sPk-o&usqp=CAU" alt="Resume Icon">
         <a href="resume.html">Resume</a>
     </div>
-
     
 </body>
 </html>
-
-
-
 
 
 <!DOCTYPE html>
@@ -141,7 +130,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Certificate</title>
+    <title>Certificates</title>
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            flex-direction: column;
+        }
+
+        /* Container styling */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Styling for the headings */
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Embed or iframe for PDF viewer */
+        .pdf-viewer {
+            width: 55vw;
+            height: 100vh;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Fallback link */
+        .fallback-link {
+            margin: 10px 0;
+            display: inline-block;
+            font-size: 16px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .fallback-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Certificate</h1>
+        <!-- Embed the AWS Certificate -->
+        <embed src="C:\Users\vuppa\Downloads\certificates and resume\AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20240903-7-d4uhp8.pdf"  class="pdf-viewer" type="application/pdf">
+        
+
+        <h1>Python Certificate by Kaggle</h1>
+        <!-- Embed the Python Certificate -->
+        <embed src="C:\Users\vuppa\Downloads\certificates and resume\Python.pdf" class="pdf-viewer" type="application/pdf">
+       
+        <h1>SQL Basic Certificate by HackerRank</h1>
+        <!-- Embed the SQL Certificate -->
+        <embed src="C:\Users\vuppa\Downloads\certificates and resume\sql_basic certificate (1) (1).pdf" class="pdf-viewer" type="application/pdf">
+        
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <style>
         /* General body styling */
         body {
@@ -157,48 +223,33 @@
         /* Container to center heading and PDF */
         .container {
             text-align: center;
+            width: 90%;
+            max-width: 800px;
         }
 
         /* Styling for the heading */
         h1 {
-            font-size: 36px;
+            font-size: 28px;
             color: #333;
             margin-bottom: 20px;
-            font-family: 'Roboto', sans-serif;
         }
 
         /* Embed or iframe to center the PDF */
         .pdf-viewer {
-            width: 210%;
-            height: 570px;
-            
+            width: 100%;
+            height: 100vh;
             border: 2px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>AWS Certificate</h1>
+        <h1>My Resume</h1>
         <!-- Embed the PDF or use iframe -->
-        <embed src="AWS_Academy_Graduate.pdf" class="pdf-viewer" type="application/pdf">
-            
-            <h1>Python Certificate by Kaggle</h1>
-        <!-- Embed the PDF or use iframe -->
-        <embed src="Python.pdf" class="pdf-viewer" type="application/pdf">
-            
-
-            <h1>SQL Basic certificate by Hacker Rank</h1>
-        <!-- Embed the PDF or use iframe -->
-        <embed src="sql_basic_certificate.pdf" class="pdf-viewer" type="application/pdf">
-            
-
+        <embed src="C:\Users\vuppa\Downloads\certificates and resume\Resume last.pdf" class="pdf-viewer" type="application/pdf">
+        
     </div>
 </body>
 </html>
-
-
-    
-   
-    
